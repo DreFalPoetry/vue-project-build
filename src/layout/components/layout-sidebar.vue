@@ -1,5 +1,5 @@
 <template>
-  <div>vue w23e</div>
+  <div>side bar</div>
 </template>
 
 <script>

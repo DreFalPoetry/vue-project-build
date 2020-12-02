@@ -1,6 +1,7 @@
 <template>
-  <div>vue component</div>
-  <el-button>ssss<el-button>
+  <div>
+    header
+  </div>
 </template>
 
 <script>

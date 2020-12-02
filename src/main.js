@@ -1,11 +1,11 @@
 import Vue from 'vue'
 import ElementUI from 'element-ui';
 import 'element-ui/lib/theme-chalk/index.css';
+import '@/styles/global.less'
 import App from './App.vue'
 import router from './router'
 import store from './store'
 import less from 'less'
-import './plugins/element.js'
 
 Vue.use(less)
 Vue.use(ElementUI)

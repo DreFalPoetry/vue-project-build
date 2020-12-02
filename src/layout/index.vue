@@ -1,13 +1,19 @@
 <template>
   <div class="wrapper">
-    <layout-header/>
-    <div>
-      <layout-sidebar/>
-      <div>
-        <layout-tabbar/>
-        <app-main/>
-      </div>
-    </div>
+    <el-container>
+      <el-header>
+        <layout-header/>
+      </el-header>
+       <el-container>
+        <el-aside width="200px">
+          <layout-sidebar/>
+        </el-aside>
+        <el-main>
+          <layout-tabbar/>
+          <app-main/>
+        </el-main>
+      </el-container>
+    </el-container>
   </div>
 </template>
 
@@ -36,8 +42,39 @@ export default {
 </script>
 <style lang='less' scoped>
   .wrapper{
-    width: 200px;
-    height: 200px;
-    overflow: hidden;
+    height: 100vh;
+  }
+  .el-header, .el-footer {
+    background-color: #B3C0D1;
+    color: #333;
+    text-align: center;
+    line-height: 60px;
+  }
+  
+  .el-aside {
+    background-color: #D3DCE6;
+    color: #333;
+    text-align: center;
+    line-height: 200px;
+  }
+  
+  .el-main {
+    background-color: #E9EEF3;
+    color: #333;
+    text-align: center;
+    padding: 0px 20px;
+  }
+  
+  .wrapper > .el-container {
+    height: 100%;
+  }
+  
+  .el-container:nth-child(5) .el-aside,
+  .el-container:nth-child(6) .el-aside {
+    line-height: 260px;
+  }
+  
+  .el-container:nth-child(7) .el-aside {
+    line-height: 320px;
   }
 </style>

@@ -1,5 +1,3 @@
-# kq-manage
-
 ## Project setup
 ```
 npm install
