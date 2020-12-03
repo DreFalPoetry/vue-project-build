@@ -13,7 +13,9 @@ export default {
   },
   computed: {},
   created() {},
-  mounted() {},
+  mounted() {
+    this.$store.dispatch('permission/generateRoutes',['admin'])
+  },
   methods: {}
 }
 </script>
