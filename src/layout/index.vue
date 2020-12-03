@@ -5,7 +5,7 @@
         <layout-header/>
       </el-header>
        <el-container>
-        <el-aside width="200px">
+        <el-aside width="260px">
           <layout-sidebar/>
         </el-aside>
         <el-main>
@@ -55,7 +55,6 @@ export default {
     background-color: #D3DCE6;
     color: #333;
     text-align: center;
-    line-height: 200px;
   }
   
   .el-main {
