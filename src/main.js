@@ -11,6 +11,8 @@ import App from './App.vue'
 import store from './store'
 import router from './router'
 
+import './icons' // icon
+
 import * as filters from './filters' // global filters
 
 /**
